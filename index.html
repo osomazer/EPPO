@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página oficial de EPPO, transporte interprovincial en el norte del Perú.">
+    <title>EPPO Transporte</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 20px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .banner {
+            background-image: url('banner.jpg'); /* Cambiar por la imagen real */
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 50px 10%;
+        }
+        .section {
+            padding: 40px 10%;
+        }
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        .button {
+            background-color: #0055a5;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>EPPO Transporte</h1>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#sedes">Sedes</a>
+            <a href="#reservas">Reservas</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+    
+    <div class="banner">
+        <h2>Bienvenido a EPPO Transporte</h2>
+        <p>Viaja seguro y cómodo con nosotros.</p>
+        <a href="#reservas" class="button">Reserva tu boleto</a>
+    </div>
+    
+    <section id="sedes" class="section">
+        <h2>Nuestras Sedes</h2>
+        <ul>
+            <li>Terminal El Alto</li>
+            <li>Terminal Los Órganos</li>
+            <li>Terminal Máncora</li>
+            <li>Terminal Piura</li>
+            <li>Terminal Sullana</li>
+            <li>Terminal Talara</li>
+            <li>Terminal Zona Industrial El Alto</li>
+        </ul>
+    </section>
+    
+    <section id="reservas" class="section">
+        <h2>Reservas</h2>
+        <form>
+            <label for="origen">Origen:</label>
+            <input type="text" id="origen" name="origen" required><br><br>
+            <label for="destino">Destino:</label>
+            <input type="text" id="destino" name="destino" required><br><br>
+            <label for="fecha">Fecha del Viaje:</label>
+            <input type="date" id="fecha" name="fecha" required><br><br>
+            <label for="pasajeros">Número de Pasajeros:</label>
+            <input type="number" id="pasajeros" name="pasajeros" min="1" max="10" required><br><br>
+            <button type="submit" class="button">Reservar</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 EPPO Transporte | Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
